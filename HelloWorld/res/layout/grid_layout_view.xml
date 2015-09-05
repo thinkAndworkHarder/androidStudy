@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridlayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:rowCount="6"
+    android:columnCount="4">
+    <!-- 定义一个横跨4列的文本框，并设置前景色、背景色 -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:textSize="50sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:padding="4dp"
+        android:layout_gravity="right"
+        android:background="#eee"
+        android:textColor="#000"
+        android:text="@string/calc_orig_text"
+        android:gravity="fill"/>
+    <!-- 定义一个横跨4列的按钮 -->
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:text="@string/calc_clear"/>
+</GridLayout>
